@@ -40,7 +40,7 @@ static void GetFull()
     {
         for (int j = i; j < ran; j++)
         {
-            Console.Write("O");
+            Console.Write("O\t");
         }
         Console.WriteLine();
     }
@@ -56,9 +56,9 @@ static void GetPartial()
         {
             if(j == 3 || j == 6 || j == 9)
             {
-                Console.Write(" ");
+                Console.Write("\t");
             }
-            Console.Write("O");
+            Console.Write("O\t");
         }
         Console.WriteLine();
     }
