@@ -34,10 +34,32 @@ static void DisplayMenu()
 
 static void GetFull()
 {
-    System.Console.WriteLine("Full Triangle");
+    int ran = new Random().Next(3,9);
+            
+    for (int i = ran; i > 0; i--)
+    {
+        for (int j = i; j < ran; j++)
+        {
+            Console.Write("O");
+        }
+        Console.WriteLine();
+    }
 }
 
 static void GetPartial()
 {
-    System.Console.WriteLine("Partial Triangle");
+    int ran = new Random().Next(3,9);
+       
+    for (int i = ran; i > 0; i--)
+    {
+        for (int j = i; j < ran; j++)
+        {
+            if(j == 3 || j == 6 || j == 9)
+            {
+                Console.Write(" ");
+            }
+            Console.Write("O");
+        }
+        Console.WriteLine();
+    }
 }
